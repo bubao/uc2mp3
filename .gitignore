@@ -1,0 +1,6 @@
+test/*.mp3
+test/*.uc!
+
+.vscode
+
+node_modules
