@@ -3,7 +3,7 @@
  * @author: bubao
  * @date: 2021-03-04 01:48:32
  * @last author: bubao
- * @last edit time: 2021-03-04 03:38:35
+ * @last edit time: 2021-03-18 17:12:11
  */
 
 /**
@@ -11,7 +11,7 @@
  * @author bubao
  * @date 2021-03-04
  * @param {Buffer} buffer uc! buffer data
- * @param {Function} 
+ * @param {cb} callback
  */
 function translation(buffer, callback = cb) {
 	process.nextTick(middler(buffer, callback))
@@ -43,7 +43,7 @@ function core(buffer) {
  * @author bubao
  * @date 2021-03-04
  * @param {Buffer} buffer
- * @param {Function} cb
+ * @param {cb} cb
  * @returns {Function}
  */
 function middler(buffer, cb) {
